@@ -6,7 +6,7 @@ import math
 
 type
     Vec3* = object
-        x*, y, z: float64
+        x*, y*, z*: float64
 
 proc x*(v: Vec3): float64 =
     result = v.x
