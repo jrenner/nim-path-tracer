@@ -26,6 +26,9 @@ proc clamp*(f: float64): float64 =
     else:
         result = f
 
+proc createVec*(x: float64=0, y: float64=0, z: float64=0): Vec3 =
+    result = Vec3(x: x, y: y, z: z)
+
 proc `+`*(v: Vec3, other: Vec3): Vec3 =
     result = Vec3(x: v.x + other.x,
                   y: v.y + other.y,
